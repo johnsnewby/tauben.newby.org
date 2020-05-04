@@ -2,9 +2,24 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, Sans-Serif;
+    float: left;
 }
 a {
     color: white;
-};
+}
+img {
+    margin-left: 10px;
+    margin-right: 10px;
+    border:1px solid white;
+}
+.centered {
+    text-align: center;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+}
 
-
+.floated

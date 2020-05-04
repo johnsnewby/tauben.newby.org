@@ -1,7 +1,6 @@
 <!doctype html public "-//W3C//DTD HTML 4.0 Transitional //EN">
 <html>
 <head>
-  <meta name="GENERATOR" content="mkd2html 2.2.6 GITHUB_CHECKBOX">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title></title>
   <link rel="stylesheet" type="text/css" href="pigeon.css">
@@ -10,10 +9,13 @@
 <h1>The TaubenCam, a useless quarantine project.</h1>
 
 <h2>Introduction</h2>
-
+<div style="float:right">
+  <a href="babies-large.jpg"><img src="babies.jpg" width="300" alt="babies"/></a>
+</div>
 <p>I am a freelance developer, currently not working and confined to my apartment in Berlin. Under these circumstances a person needs a project.</p>
 
-<p>Last year a pair of wood pigeons came and nested on our balcony, where they raised two very ugly babies. This year they are back, and of course the natural thing to do is to attempt to broadcast this miracle of new life into the world.</p>
+<p>Last year a pair of wood pigeons came and nested on our balcony, where they raised  <a href="babies-large.jpg">two very ugly babies.</a>
+This year they are back, and of course the natural thing to do is to attempt to broadcast this miracle of new life into the world.</p>
 
 <p>The goals of the project are
 - to film the pigeons
@@ -22,10 +24,11 @@
 
 <p>In order to do this I have set up a VPN using Nebula, from Slack. I use a cheap linux webserver which costs USD5.95/month (I know there are cheaper), and I have written a custom application which takes one stream from the camera, but only when there are viewers, and re-sends it to each connected viewer.</p>
 
+<div style="clear: both;"></div>
 <h2>Hardware and software resources</h2>
 
 <p>Currently the system is working using a Raspberry Pi 3B+, a wide-angle camera, and a 1m long cable I bought from Amazon.
-[Picture]</p>
+  <div style="float:left"><img src="Pi-smaller.jpg" width="300"/></div></p>
 
 <p>The software used on the Pi is <a href="https://motion-project.github.io/">motion</a>, and  <a href="https://github.com/slackhq/nebula">nebula</a>. The idea is to do as little smart stuff as possible on the Pi, which is not super stable when the camera is running, and all processing on a relatively powerful machine.</p>
 
@@ -34,7 +37,7 @@
 <p>The camera is mounted inside a 3d-printed case which I made (<a href="camera_case.scad">source code</a>) using <a href="https://www.openscad.org">OpenScad</a>, which is held up by wire taken from a coat-hanger.</p>
 
 <p>The whole thing works in the Berlin rain because of <a href="https://www.corrosionx.com/products/corrosionx">CorrosionX</a>, which is an extraordinary thing.</p>
-  
+<div style="clear: both;"></div>
 
 <h3>Network Reources</h3>
 
