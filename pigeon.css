@@ -11,14 +11,4 @@ img {
     margin-right: 10px;
     border:1px solid white;
 }
-.centered {
-    text-align: center;
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-    }
 }
-
-.floated
