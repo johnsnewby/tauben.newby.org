@@ -1,0 +1,37 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional //EN">
+<html>
+<head>
+  <meta name="GENERATOR" content="mkd2html 2.2.6 GITHUB_CHECKBOX">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+</head>
+<body>
+<h1>The TaubenCam, a useless quarantine project.</h1>
+
+<h2>Introduction</h2>
+
+<p>I am a freelance developer, currently not working and confined to my apartment in Berlin. Under these circumstances a person needs a project.</p>
+
+<p>Last year a pair of wood pigeons came and nested on our balcony, where they raised two very ugly babies. This year they are back, and of course the natural thing to do is to attempt to broadcast this miracle of new life into the world.</p>
+
+<p>The goals of the project are
+- to film the pigeons
+- to enable broadcasting the pigeons over a household ADSL connection for as many viewers as I can get
+- to do all of it with a Raspberry Pi and camera, and the cheapest possible webserver, out there on the internet.</p>
+
+<p>In order to do this I have set up a VPN using Nebula, from Slack. I use a cheap linux webserver which costs USD5.95/month (I know there are cheaper), and I have written a custom application which takes one stream from the camera, but only when there are viewers, and re-sends it to each connected viewer.</p>
+
+<h2>Hardware Resources</h2>
+
+<p>Currently the system is working using a Raspberry Pi 3B+, a wide-angle camera, and a 1m long cable I bought from Amazon.
+[Picture]</p>
+
+<p>The software used on the Pi is <a href="https://motion-project.github.io/">motion</a>, and  <a href="https://github.com/slackhq/nebula">nebula</a>. The idea is to do as little smart stuff as possible on the Pi, which is not super stable when the camera is running, and all processing on a relatively powerful machine.</p>
+
+<p>The glue for everything is a motion jpeg proxy which I wrote in Rust, my current language of choice. It is insanely over-engineered for such a project, and time will tell whether it&rsquo;s stable enough. The source code is <a href="https://github.com/johnsnewby/mjpeg">here</a>, and it would please me enormously if other people found some use for this.</p>
+
+<h3>Network Reources</h3>
+
+<p>As stated, the Pi is on my local network, and there is a cheap virtual server somewhere in the cloud which is the public face of this project.</p>
+</body>
+</html>
