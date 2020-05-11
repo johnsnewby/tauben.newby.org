@@ -15,9 +15,9 @@
       %for v in videos:
       <figure>
       <a href="${v['src']}"><video width="320" height="240" controls>
-          <source="${v['src']}">
+          <source src="${v['src']}">
       </video></a>
-      <figcaption>"${v['title']}</figcaption>
+      <figcaption>${v['title']}</figcaption>
       </figure>
       %endfor
     </div>
