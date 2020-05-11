@@ -1,7 +1,7 @@
 case_thickness = 5;
 case_depth = 30;
 card_height = 32;
-card_breadth = 32;;
+card_breadth = 32;
 card_width = 2;
 cable_width = 19.6;
 cable_height = 0.5;
@@ -17,7 +17,7 @@ linear_extrude(height = height) {
           square(size=[case_depth, card_height + (case_thickness * 2)]);
           translate([case_thickness,case_thickness])
                square(size=[case_depth,card_height]);
-          translate([20,4]) square(size=[card_width, card_height+2]);
+          translate([20,5]) square(size=[card_width, card_height+1]);
      }
 }
 
