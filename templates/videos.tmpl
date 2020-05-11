@@ -11,9 +11,15 @@
     <div class="container">
       <h1>daily videos.</h1>
       Each day's images, 30 seconds/frame, mp4 format.
-      <a href="foo.mp4"><video width="320" height="240" controls>
-          <source="movies/20200509 -- Saturday 9 May.mp4">
+      <br>
+      %for v in videos:
+      <figure>
+      <a href="${v['src']}"><video width="320" height="240" controls>
+          <source="${v['src']}">
       </video></a>
+      <figcaption>"${v['title']}</figcaption>
+      </figure>
+      %endfor
     </div>
   </body>
 </html>
