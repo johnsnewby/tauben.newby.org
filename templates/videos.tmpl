@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>How it Works</title>
+    <title>Daily videos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -9,15 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <h1>daily videos.</h1>
+      <h1>daily videos</h1>
       Each day's images, 30 seconds/frame, mp4 format.
       <br>
       %for v in videos:
       <figure>
       <a href="${v['src']}"><video width="320" height="240" controls>
-          <source="${v['src']}">
+          <source src="${v['src']}">
       </video></a>
-      <figcaption>"${v['title']}</figcaption>
+      <figcaption>${v['title']}</figcaption>
       </figure>
       %endfor
     </div>
