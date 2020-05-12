@@ -44,6 +44,8 @@
 
       <p>The glue for everything is a motion jpeg proxy which I wrote in Rust, my current language of choice. It is insanely over-engineered for such a project, and time will tell whether it&rsquo;s stable enough. The source code is <a href="https://github.com/johnsnewby/mjpeg">here</a>, and it would please me enormously if other people found some use for this.</p>
 
+      <p>Every 30 seconds <a href="https://www.ffmpeg.org/">the amazing ffmpeg</a> saves an image from the stream, and each day after midnight these are made into the film and copied to the webserver. All the scripts which do this are written in Python or Bash and are in the <a href="https://github.com/johnsnewby/tauben.newby.org/tree/master/scripts">github repo</a> of this website.</p>
+
       <p>The camera is mounted inside a 3d-printed case which I made (<a href="camera_case.scad">source code</a>) using <a href="https://www.openscad.org">OpenScad</a>, which is held up by wire taken from a coat-hanger.</p>
       <div style="float-right"><a href="camera-large.jpg"><img src="camera-small.jpg" alt="camera" width="300"></a></div>
 
