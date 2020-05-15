@@ -6,13 +6,12 @@ import sys
 
 pattern = "movies/20*.mp4"
 files = glob.glob(pattern)
-print(files)
+files.sort(reverse=True)
 regexp = r"-- (.*).mp4"
 videos = []
 for file in files:
     matches = re.search(regexp, file)
     if matches:
-        print("match %s" % (file))
         videos.append({"title": matches.group(1),
                        "src": file})
     else:
